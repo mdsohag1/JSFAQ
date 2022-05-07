@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStroge</title>
+</head>
+<body>
+    <h1 id="local">localStroge</h1>
+    <ul class="lo">
+
+    </ul>
+
+    <script>
+        localStorage.setItem("name", "aliabbas sohag")
+        localStorage.setItem("pass", '1214545454')
+
+        const name = localStorage.getItem("name")
+        const pass = localStorage.getItem("pass")
+        console.log(name)
+        console.log(pass)
+
+        localStorage.removeItem("name")
+
+        const countris = ["bangladesh", "napal", "butan", "pakistan"]
+        const countrisLocal = localStorage.setItem("countris", JSON.stringify(countris))
+
+
+        const parse = JSON.parse(localStorage.getItem("countris"))
+        
+
+
+    </script>
+</body>
+</html>
